@@ -65,7 +65,7 @@ import { of } from 'rxjs';
 import { fetchUserEpic } from './somewhere/fetchUserEpic';
 
 const mockResponse = { name: 'Bilbo Baggins' };
-const action$ = of({ type: 'FETCH_USERS_REQUESTED' });
+const action$ = of({ type: 'FETCH_USERS' });
 const state$ = null; // not needed for this epic
 const dependencies = {
   getJSON: url => of(mockResponse)
